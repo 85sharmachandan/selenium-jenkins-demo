@@ -3,6 +3,11 @@
   <groupId>com.lateetud</groupId>
   <artifactId>AllureReports</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <allure.results.directory>
+            ${project.build.directory}/allure-results
+        </allure.results.directory>
+    </properties>
   <dependencies>
 <!-- Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
 <dependency>
