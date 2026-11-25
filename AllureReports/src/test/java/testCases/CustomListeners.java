@@ -1,14 +1,15 @@
 package testCases;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
 import java.io.InputStream;
-
+import org.testng.ITestResult;
+import io.qameta.allure.Allure;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestResult;
+//import org.testng.ITestResult;
 
-import io.qameta.allure.Allure;
+//import io.qameta.allure.Allure;
 
 public class CustomListeners implements ITestListener{
 	
@@ -22,15 +23,20 @@ public class CustomListeners implements ITestListener{
     public void onTestSuccess(ITestResult result) {
     }
 
-    @Override
+    /*@Override
     public void onTestFailure(ITestResult result) {
 		try {
 			is = new FileInputStream("D:\\Projects\\RP Lumos - React\\Bug Screenshots\\IncorrectSiteVolumeByModality.png");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Allure.addAttachment("Screenshot", is);
+    }*/
+    
+    @Override
+    public void onTestFailure(ITestResult result) {
+        Allure.addAttachment("Failure - " + result.getName(),
+                String.valueOf(result.getThrowable()));
     }
 
     @Override
