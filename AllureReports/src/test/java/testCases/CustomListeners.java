@@ -8,7 +8,6 @@ import io.qameta.allure.Allure;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 //import org.testng.ITestResult;
-
 //import io.qameta.allure.Allure;
 
 public class CustomListeners implements ITestListener{
