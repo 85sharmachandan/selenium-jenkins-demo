@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import java.io.InputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
