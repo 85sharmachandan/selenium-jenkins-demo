@@ -25,7 +25,7 @@ public class CustomListeners implements ITestListener{
     /*@Override
     public void onTestFailure(ITestResult result) {
 		try {
-			is = new FileInputStream("D:\\Projects\\RP Lumos - React\\Bug Screenshots\\IncorrectSiteVolumeByModality.png");
+			is = new FileInputStream("D:\\Projects\\Test\\Bug Screenshots\\bug1.png");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
